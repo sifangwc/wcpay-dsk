@@ -1,0 +1,19 @@
+{
+    "name": "laowin/wcpay-dsk",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Laowin\\WcpaySdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "p1",
+            "email": "p1@mzfk.com"
+        }
+    ],
+    "require": {
+        "ext-curl": "*"
+    }
+}
