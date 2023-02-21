@@ -13,3 +13,5 @@ $order_info = $pay->GenerateOrder();
 var_dump($order_info);
 $query_info = $pay->QueryOrder($otn);
 var_dump($query_info);
+
+//$pay->CheckNotify($_REQUEST); // 使用这个方法进行验签，请注意有的反代配置可能改写请求参数导致验签失败
