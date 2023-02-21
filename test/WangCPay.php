@@ -1,10 +1,8 @@
 <?php
-namespace Laowin\WcpaySdk;
-
 /**
- * 使用老旧的写法以兼容php5.6
+ * 使用老旧的写法以兼容php5.6 且不支持composer的情况。
  */
-class WcPay
+class WangCPay
 {
     private $app_key;
     private $app_secret;
@@ -206,4 +204,9 @@ class WcPay
         curl_close($curl); // 关闭CURL会话
         return $tmpInfo; // 返回数据，json格式
     }
+}
+
+class WcException extends Exception
+{
+
 }
